@@ -35,24 +35,16 @@ namespace AulaGitHub
 					case 1:
 						Console.Clear();
 						Console.WriteLine("======== QUADRADO =======");
-                        Console.WriteLine("Nome: ");
+						Console.Write("Nome: ");
+						Q.Nome = Console.ReadLine();
+						Console.Write("Cor: ");
+						Q.Cor = Console.ReadLine();
+						Console.Write("Lado: ");
+						Q.Lado = double.Parse(Console.ReadLine());
+						LF.Add(Q);
+						
 						break;
-                    case 2:
-                        Console.Clear();
-                        Console.WriteLine("======== TRIANGULO =======");
-                        Console.Write("Nome: ");
-                        T.Nome = Console.ReadLine();
-                        Console.Write("Cor: ");
-                        T.Cor= Console.ReadLine();
-                        Console.Write("Altura: ");
-                        T.AlturaT = double.Parse(Console.ReadLine());
-                        Console.Write("Base: ");
-                        T.BaseT = double.Parse(Console.ReadLine());
-                        llllkl
-                        Console.WriteLine(T.Area());
-                        break;
-                }
-
+				}
 			} while (Op!=5);
         }
     }
