@@ -48,6 +48,7 @@ namespace AulaGitHub
                         T.AlturaT = double.Parse(Console.ReadLine());
                         Console.Write("Base: ");
                         T.BaseT = double.Parse(Console.ReadLine());
+                        llllkl
                         Console.WriteLine(T.Area());
                         break;
                 }
