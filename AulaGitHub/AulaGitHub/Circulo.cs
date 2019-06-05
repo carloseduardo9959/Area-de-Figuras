@@ -8,6 +8,13 @@ namespace AulaGitHub
 {
     class Circulo : Figura
     {
+        /*
+         *  
+         * 
+         *         COMPUTAÇÃO UNIFENAS
+         * 
+         * 
+         */
         private double raio;
 
         public double Raio { set => raio = value; }//OLOKINHO MEU
@@ -19,5 +26,6 @@ namespace AulaGitHub
             return A;
         }
 
+        
     }
 }
