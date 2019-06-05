@@ -10,9 +10,19 @@ namespace AulaGitHub
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hellow World!");
-			Console.WriteLine("Teste");
-			Console.WriteLine("Carlos é Gay");
+			int Op = 0;
+			do
+			{
+				Console.WriteLine("===== MENU DE OPÇÕES =====");
+				Console.WriteLine("[1] - Adicionar Quadrado");
+				Console.WriteLine("[2] - Adicionar Triangulo");
+				Console.WriteLine("[3] - Adicionar Círculo");
+				Console.WriteLine("[4] - Mostrar o Nome, a Cor e a Área de uma determinada figura");
+				Console.WriteLine("[5] - Sair do programa");
+				Console.WriteLine("==========================");
+				Console.Write("Sua opção: ");
+				Op = int.Parse(Console.ReadLine());
+			} while (Op!=5);
         }
     }
 }
