@@ -35,10 +35,23 @@ namespace AulaGitHub
 					case 1:
 						Console.Clear();
 						Console.WriteLine("======== QUADRADO =======");
-						Console.WriteLine("Nome: ");
-						
+                        Console.WriteLine("Nome: ");
 						break;
-				}
+                    case 2:
+                        Console.Clear();
+                        Console.WriteLine("======== TRIANGULO =======");
+                        Console.Write("Nome: ");
+                        T.Nome = Console.ReadLine();
+                        Console.Write("Cor: ");
+                        T.Cor= Console.ReadLine();
+                        Console.Write("Altura: ");
+                        T.AlturaT = double.Parse(Console.ReadLine());
+                        Console.Write("Base: ");
+                        T.BaseT = double.Parse(Console.ReadLine());
+                        Console.WriteLine(T.Area());
+                        break;
+                }
+
 			} while (Op!=5);
         }
     }
