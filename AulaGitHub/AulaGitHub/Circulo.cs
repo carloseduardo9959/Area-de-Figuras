@@ -19,7 +19,7 @@ namespace AulaGitHub
 
         public double Raio { set => raio = value; }//OLOKINHO MEU
 
-        public double Area()
+       override public double Area()
         {
             double A;
             A = 3.1416 * (raio * raio);
