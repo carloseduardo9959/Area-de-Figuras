@@ -12,7 +12,7 @@ namespace AulaGitHub
         {
             Console.WriteLine("Hellow World!");
 			Console.WriteLine("Teste");
-			Console.WriteLine("Wallace é Gay");
+			Console.WriteLine("Carlos é Gay");
         }
     }
 }
