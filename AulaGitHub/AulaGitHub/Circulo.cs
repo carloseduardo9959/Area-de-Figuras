@@ -10,7 +10,7 @@ namespace AulaGitHub
     {
         private double raio;
 
-        public double Raio { set => raio = value; }//OLOKINHO MEU
+        public double Raio { set => raio = value; }
 
        override public double Area()
         {
