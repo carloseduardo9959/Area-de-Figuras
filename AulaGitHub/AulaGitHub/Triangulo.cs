@@ -14,7 +14,7 @@ namespace AulaGitHub
         public double AlturaT { set => alturaT = value; }
         public double BaseT { set => baseT = value; }
 
-        public double Area()
+        override public double Area()
         {
             return (baseT * alturaT) / 2;
         }
