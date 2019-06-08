@@ -74,12 +74,12 @@ namespace AulaGitHub
                         break;
                     //Deu certo???
                     case 4:
-
-        
-                        foreach (Figura item in LF)//Comando para mostrar todos os valores dentro da lista
+						Console.Clear();
+						foreach (Figura item in LF)//Comando para mostrar todos os valores dentro da lista
                         {
-                            Console.WriteLine(item.Cor  + item.Nome.ToString());
-                            Console.WriteLine(item.Area());
+                            Console.WriteLine("Nome: "+item.Nome);
+							Console.WriteLine("Cor: " + item.Cor);
+                            Console.WriteLine("Area: " +item.Area());
                         }
                         Console.ReadKey();
 
