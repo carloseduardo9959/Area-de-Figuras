@@ -85,6 +85,7 @@ namespace AulaGitHub
                             {
                                 Console.WriteLine("Nome: " + item.Nome);
                                 Console.WriteLine("Cor: " + item.Cor);
+
                                 Console.WriteLine("Area: " + item.Area());
                             }
                             else
