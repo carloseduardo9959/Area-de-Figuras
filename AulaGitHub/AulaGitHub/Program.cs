@@ -41,11 +41,52 @@ namespace AulaGitHub
 						Q.Cor = Console.ReadLine();
 						Console.Write("Lado: ");
 						Q.Lado = double.Parse(Console.ReadLine());
-						LF.Add(Q);
-						
+                        Console.Write(Q.Area());
+                        LF.Add(Q);
 						break;
-				}
-			} while (Op!=5);
+
+                    case 2:
+                        Console.Clear();
+                        Console.WriteLine("======== TRIANGULO =======");
+                        Console.Write("Nome: ");
+                        T.Nome = Console.ReadLine();
+                        Console.Write("Cor: ");
+                        T.Cor = Console.ReadLine();
+                        Console.Write("Altura: ");
+                        T.AlturaT = double.Parse(Console.ReadLine());
+                        Console.Write("Base: ");
+                        T.BaseT = double.Parse(Console.ReadLine());
+                        Console.Write(T.Area());
+                        LF.Add(T);
+                        break;
+
+                    case 3:
+                        Console.Clear();
+                        Console.WriteLine("======== CIRCULO =======");
+                        Console.Write("Nome: ");
+                        C.Nome = Console.ReadLine();
+                        Console.Write("Cor: ");
+                        C.Cor = Console.ReadLine();
+                        Console.Write("Raio: ");
+                        C.Raio = double.Parse(Console.ReadLine());
+                        Console.Write(T.Area());
+                        LF.Add(T);
+                        break;
+                    //Deu certo???
+                    case 4:
+
+        
+                        foreach (Figura item in LF)//Comando para mostrar todos os valores dentro da lista
+                        {
+                            Console.WriteLine(item.Cor  + item.Nome.ToString());
+                            Console.WriteLine(item.Area());
+                        }
+                        Console.ReadKey();
+                        break;
+
+
+                }
+            } while (Op!=5);
         }
     }
 }
