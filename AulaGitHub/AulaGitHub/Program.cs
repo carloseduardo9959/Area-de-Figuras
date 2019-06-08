@@ -82,8 +82,9 @@ namespace AulaGitHub
                             Console.WriteLine(item.Area());
                         }
                         Console.ReadKey();
-                        break;
 
+                        break;
+                        
 
                 }
             } while (Op!=5);
