@@ -8,6 +8,7 @@ namespace AulaGitHub
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 			List<Figura> LF = new List<Figura>();
@@ -26,6 +27,7 @@ namespace AulaGitHub
 				Console.WriteLine("[3] - Adicionar Círculo");
 				Console.WriteLine("[4] - Mostrar o Nome, a Cor e a Área de uma determinada figura");
 				Console.WriteLine("[5] - Sair do programa");
+
 				Console.WriteLine("==========================");
 				Console.Write("Sua opção: ");
 				Op = int.Parse(Console.ReadLine());
@@ -68,19 +70,30 @@ namespace AulaGitHub
                         Console.Write("Cor: ");
                         C.Cor = Console.ReadLine();
                         Console.Write("Raio: ");
-                        C.Raio = double.Parse(Console.ReadLine());
-                        Console.Write(T.Area());
-                        LF.Add(T);
+                        C.Raio= double.Parse(Console.ReadLine());
+                        Console.Write(C.Area());
+                        LF.Add(C);
                         break;
-                    //Deu certo???
+                  
                     case 4:
-						Console.Clear();
-						foreach (Figura item in LF)//Comando para mostrar todos os valores dentro da lista
+
+                        Console.Write("Digite o Nome da Figura desejada:");
+                        string aux = Console.ReadLine();
+                        foreach (Figura item in LF)
                         {
-                            Console.WriteLine("Nome: "+item.Nome);
-							Console.WriteLine("Cor: " + item.Cor);
-                            Console.WriteLine("Area: " +item.Area());
+                            if (item.Nome == aux)
+                            {
+                                Console.WriteLine("Nome: " + item.Nome);
+                                Console.WriteLine("Cor: " + item.Cor);
+
+                                Console.WriteLine("Area: " + item.Area());
+                            }
+                            else
+                            {
+                                Console.WriteLine("Figura não encontrada!");
+                            }
                         }
+                            
                         Console.ReadKey();
 
                         break;
